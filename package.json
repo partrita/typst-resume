@@ -1,0 +1,20 @@
+{
+  "name": "TypstResume",
+  "version": "1.0.0",
+  "description": "My personal resume made with Typst",
+  "main": "index.js",
+  "author": "Ammar Ahmed <ammar.ahmed1@uwaterloo.ca>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "mkdir -p $npm_package_config_build_dir",
+    "build": "typst compile --font-path $npm_package_config_font_path $npm_package_config_src_dir/$npm_package_config_src_file $npm_package_config_build_dir/$npm_package_config_output_file",
+    "watch": "yarn run prebuild && typst watch --font-path $npm_package_config_font_path $npm_package_config_src_dir/$npm_package_config_src_file $npm_package_config_build_dir/$npm_package_config_output_file"
+  },
+  "config": {
+    "src_dir": "src",
+    "font_path": "src/resources/fonts",
+    "src_file": "resume.typ",
+    "output_file": "AmmarAhmedResume.pdf",
+    "build_dir": "build"
+  }
+}
