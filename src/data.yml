@@ -1,0 +1,199 @@
+name: Ammar Ahmed
+
+contact:
+  - text: 416-836-4386
+    icon:
+      unicode: "\uf095"
+  - text: ammar.ahmed1@uwaterloo.ca
+    icon: 
+      unicode: "\uf0e0"
+    link: "mailto:ammar.ahmed1@uwaterloo.ca"
+  - text: ammarahmed.ca
+    icon:
+      unicode: "\uf0c1"
+    link: https://ammarahmed.ca
+  - text: ammar-ahmed22
+    icon:
+      unicode: "\uf09b"
+    link: https://github.com/ammar-ahmed22
+  - text: Ammar Ahmed
+    icon:
+      unicode: "\uf08c"
+    link: www.linkedin.com/in/ammarahmed2203
+
+sections:
+  - name: Work Experience
+    type: Experience
+    content:
+      - org:
+          name: AI Arena
+          link: https://docs.aiarena.io/
+        position: Frontend Developer
+        start:
+          month: September
+          year: 2022
+        end:
+          month: May
+          year: 2023
+        location:
+          country: Canada
+          city: Toronto
+          region: ON
+        skills:
+          - React.js 
+          - THREE.js 
+          - Tween.js 
+          - HTML/CSS
+        info:
+          - Crafted engaging UI components and visual effects for a web-based platform fighter game, enhancing user experience and engagement.
+          - "Engineered a custom React Hook for image lazy-loading, achieving a *75% reduction in loading times*, optimizing game performance."
+          - Innovated a state machine system to dynamically render cut scenes using JSON data with THREE.js and custom React hooks.
+          - Collaborated on game end animations adhering meticulously to UI design specifications, employing CSS keyframes, tween.js, and THREE.js.
+      - org:
+          name: HIRE Technologies
+          link: https://www.linkedin.com/company/hiretechnologies/
+        position: Full-Stack Developer
+        start:
+          month: January
+          year: 2022
+        end:
+          month: May
+          year: 2022
+        location:
+          country: Canada
+          city: Toronto
+          region: ON
+        skills:
+          - React
+          - MaterialUI
+          - GraphQL
+          - Node.js
+          - AWS Lambda
+          - DynamoDB
+        info:
+          - Managed bug fixes, testing, and minor updates for the Pulsify web application while contributing to feature development.
+          - "Independently developed a comprehensive full-stack web application showcasing Microsoft Teams call data for *100+ employees* using React, GraphQL, MongoDB, and Chakra-UI."
+          - Led the implementation of a sign-up code feature, overseeing front-end enhancements and authoring AWS Lambda functions.
+          - Designed and implemented a streamlined front-end view for the web application using React and Material UI.
+      - org:
+          name: University of Waterloo
+          link: https://uwaterloo.ca/centre-for-work-integrated-learning/
+        position: Developer
+        start:
+          month: May
+          year: 2021
+        end:
+          month: August
+          year: 2021
+        location:
+          country: Canada
+          city: Waterloo
+          region: ON
+        skills:
+          - HTML/CSS 
+          - JavaScript 
+          - Bootstrap
+        info:
+          - Developed dynamic course catalogs using HTML/CSS, JavaScript, and Bootstrap.
+          - Collaborated with Deloitte Human Capital consultants to enhance UI/UX for educational courses at University of Waterloo.
+          - "Implemented auto-scrolling for Bootstrap accordions using JavaScript across *100+ webpages in 10+ educational courses*."
+          - Streamlined team workflow through JavaScript automation services to boost efficiency.
+  - name: Projects
+    type: Project
+    content:
+      - name: ammarahmed.ca
+        link: https://ammarahmed.ca
+        info:
+         - Full-stack portfolio website implementing Notion as the CMS
+         - Implemented Notion SDK to use Notion as a read-only database for projects, blog posts, skills and experience.
+         - Created GraphQL API to access parsed Notion data for rendering.
+         - Front-end implemented using the React framework in conjunction with ChakraUI.
+        date:
+          month: September
+          year: 2021
+        skills:
+          - TypeScript
+          - Apollo
+          - Node.js
+          - React.js
+          - GraphQL
+          - Chakra-UI
+          - Notion
+          - TypeGraphQL
+      - name: Pathfinder
+        link: https://pathfinder.ammarahmed.ca
+        info:
+          - "Designed a path-finding algorithm visualizer web application using React.js, TypeScript and ChakraUI."
+          - "Visualized the A\\*, Djikstra and Greedy Best First Search algorithms."
+          - Generated procedural, pseudo-random mazes through the recursive backtracking algorithm.
+          - Persisted state of application between maze generation and path-finding through the use of React hooks and context.
+          - Implemented object-oriented programming to create classes for grid cell's, vectors and priority queues.
+        date:
+          month: August
+          year: 2022
+        skills:
+          - TypeScript
+          - React.js
+          - Chakra-UI
+  
+  - name: Education
+    type: Education
+    content:
+      - institution: University of Waterloo
+        start:
+          month: September
+          year: 2020
+        end:
+          month: May
+          year: 2025
+        degree: BASc. in Nanotechnology Engineering (Co-op)
+        location:
+          country: Canada
+          city: Waterloo
+          region: ON
+  - name: Technical Skills
+    type: Skills
+    content:
+      - name: Languages
+        skills:
+          - JavaScript
+          - TypeScript
+          - Python
+          - HTML/CSS
+          - MATLAB
+          - C++
+          - LaTeX
+      - name: Developer Tools
+        skills:
+          - VS Code
+          - GitHub
+          - JIRA
+          - Google Firebase
+          - Heroku
+          - MongoDB Atlas
+          - AWS
+          - Fly.io
+      - name: Technologies/Frameworks
+        skills:
+          - React
+          - MongoDB
+          - Express
+          - Node.js
+          - THREE.js
+          - GraphQL
+          - Pandas
+          - Numpy
+          - Matplotlib
+          - SFML
+          - Git
+  - name: Honors and Awards
+    type: Awards
+    content:
+      - name: Hafiz-ul-Quran
+        org: Islamic Foundation of Toronto
+        date:
+          month: December
+          year: 2017
+        info:
+          - Memorization of 850 page holy book in classical Arabic
+          - Certified by the top Islamic Institute of Toronto

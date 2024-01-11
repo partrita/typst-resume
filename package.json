@@ -13,7 +13,7 @@
   "config": {
     "src_dir": "src",
     "font_path": "src/resources/fonts",
-    "src_file": "resume.typ",
+    "src_file": "main.typ",
     "output_file": "AmmarAhmedResume.pdf",
     "build_dir": "build"
   }
