@@ -1,0 +1,36 @@
+name: Compile and Release Resume
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      
+      - name: Compile PDF with Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: |
+            src/main.typ
+      
+      - name: Upload PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: *.pdf
+        
+      - name: Get Current Date
+        id: date
+        run: echo "DATE=$(date +%Y-%m-%d-%H:%M)" >> $GITHUB_ENV
+      
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: github.ref_type == 'tag'
+        with:
+          name: "${{ github.ref_name }} - ${{ env.DATE }}"
+          files: main.pdf

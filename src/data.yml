@@ -26,6 +26,25 @@ sections:
     type: Experience
     content:
       - org:
+          name: Nokia
+          link: https://nokia.com
+        position: Software Developer
+        start:
+          month: January
+          year: 2024
+        location:
+          country: Canada
+          city: Ottawa
+          region: ON
+        skills:
+          - React.js
+          - JIRA
+        info:
+          - Engaging in the development of the NSP (Network Services Platform) web application, specializing in React.js.
+          - Focusing on creating reusable front-end components to enhance user experience and application efficiency.
+          - Addressing software bugs, ensuring robust performance and reliability of the NSP application.
+          - Developing features with emphasis on designing and implementing new components.
+      - org:
           name: AI Arena
           link: https://docs.aiarena.io/
         position: Frontend Developer
@@ -101,25 +120,25 @@ sections:
   - name: Projects
     type: Project
     content:
-      - name: ammarahmed.ca
-        link: https://ammarahmed.ca
-        info:
-         - Full-stack portfolio website implementing Notion as the CMS
-         - Implemented Notion SDK to use Notion as a read-only database for projects, blog posts, skills and experience.
-         - Created GraphQL API to access parsed Notion data for rendering.
-         - Front-end implemented using the React framework in conjunction with ChakraUI.
-        date:
-          month: September
-          year: 2021
-        skills:
-          - TypeScript
-          - Apollo
-          - Node.js
-          - React.js
-          - GraphQL
-          - Chakra-UI
-          - Notion
-          - TypeGraphQL
+      # - name: ammarahmed.ca
+      #   link: https://ammarahmed.ca
+      #   info:
+      #    - Full-stack portfolio website implementing Notion as the CMS
+      #    - Implemented Notion SDK to use Notion as a read-only database for projects, blog posts, skills and experience.
+      #    - Created GraphQL API to access parsed Notion data for rendering.
+      #    - Front-end implemented using the React framework in conjunction with ChakraUI.
+      #   date:
+      #     month: September
+      #     year: 2021
+      #   skills:
+      #     - TypeScript
+      #     - Apollo
+      #     - Node.js
+      #     - React.js
+      #     - GraphQL
+      #     - Chakra-UI
+      #     - Notion
+      #     - TypeGraphQL
       - name: Pathfinder
         link: https://pathfinder.ammarahmed.ca
         info:
