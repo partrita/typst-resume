@@ -20,19 +20,17 @@ jobs:
         uses: ammar-ahmed22/compile-typst-action@v1
         with:
           source_paths: src/main.typ
-          output_paths: 'src/${{ github.ref_name }}-${{ env.DATE }}.pdf'
+          output_paths: 'src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf'
           fonts_path: 'src/resources/fonts'
       - name: Upload PDF
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: "**/*.pdf"
-        
+          path: "src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf"
       
-      
-      # - name: Release
-      #   uses: softprops/action-gh-release@v1
-      #   if: github.ref_type == 'tag'
-      #   with:
-      #     name: "${{ github.ref_name }} - ${{ env.DATE }}"
-      #     files: src/main.pdf
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: github.ref_type == 'tag'
+        with:
+          name: "${{ github.ref_name }} - ${{ env.DATE }}"
+          files: "src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf"
