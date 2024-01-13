@@ -2,7 +2,7 @@
 Writing my resume in Typst (the better version of LaTeX)
 
 ## How does this work? 
-I was inspired by [@thatguy](https://github.com/jskherman/cv.typ) who used `.yaml` files to store the data of his resume to be updated easily and simply. 
+I was inspired by [@jskherman](https://github.com/jskherman/cv.typ) who used `.yaml` files to store the data of his resume to be updated easily and simply. 
 
 I could have simply forked his repo to make my resume in the same way but I wanted to take on the challenge of doing it myself!
 
@@ -15,5 +15,27 @@ Being a Node.js guy, I included a `package.json` to make use of `yarn` (or npm) 
 - yarn (or npm)
 - typst
 
-Run `yarn build` to compile into a PDF
-Rung `yarn watch` to compile ino a PDF and watch for changes in the source file. 
+Run `yarn build` to compile into a PDF 
+
+Run `yarn watch` to compile ino a PDF and watch for changes in the source file. 
+
+
+## Continuous Deployment
+### Compile and Release Resume
+- GitHub Action that runs whenever a new tag is released
+- Compiles the Typst code to PDF and releases it with a timestamp
+#### Steps
+1. Checks out the repository (so it's available for the action to use)
+2. Compiles the Typst code to PDF
+3. Uploads the generated PDF as an artifact
+4. Releases the generated PDF with the timestamp
+
+### `post-commit` Git Hook
+- Whenever I commit changes locally, I am prompted if I want to tag the commit
+- Pulls the latest version
+  + Prompted to bump major or minor version
+  + Creates the new tag based on the latest
+#### Here's how it looks for me:
+```bash
+
+```
