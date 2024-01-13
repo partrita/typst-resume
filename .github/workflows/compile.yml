@@ -19,6 +19,7 @@ jobs:
           source_file: |
             src/main.typ
           options: |
+            compile
             --font-path
             src/resources/fonts
       
