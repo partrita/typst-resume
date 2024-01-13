@@ -75,7 +75,6 @@ if (arg === "run") {
   }
 } else if (arg == "help") {
   console.log("Help")
-
   
 }
 
