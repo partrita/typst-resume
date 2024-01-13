@@ -70,7 +70,7 @@ if (arg === "run") {
     const hookFile = file.split(".")[0];
     const hookFilePath = path.join(gitPath, "./hooks", hookFile);
     fs.writeFileSync(hookFilePath, fileContent, { encoding: "utf-8" });
-    const res = child_process.execSync(`chmod -x ${hookFilePath}`);
+    const res = child_process.execSync(`chmod +x ${hookFilePath}`);
     console.log(res.toString())
   }
 } else if (arg == "help") {
