@@ -37,5 +37,12 @@ Run `yarn watch` to compile ino a PDF and watch for changes in the source file.
   + Creates the new tag based on the latest
 #### Here's how it looks for me:
 ```bash
-
+>> git add . && git commit -m "Some changes"
+[post-commit hook] Commit done!
+Would you like to tag this commit? [y/N] y
+[current-version]: v1.7
+Is this a major change or a minor change? minor
+[bumping-version]: v1.8
+[main 0d0fce2] Updating README.md
+ 2 files changed, 30 insertions(+), 4 deletions(-)
 ```
