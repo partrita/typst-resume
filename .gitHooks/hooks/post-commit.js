@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 
 const getTags = () => {
   const res = child_process.execSync("git tag").toString();
-  console.log(res);
+  console.log(res.split("\n"));
 }
 
 getTags();
