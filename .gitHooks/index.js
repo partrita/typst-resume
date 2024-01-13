@@ -75,6 +75,7 @@ if (arg === "run") {
   }
 } else if (arg == "help") {
   console.log("Help")
+  
 }
 
 // const hooksPath = path.join(__dirname, "/hooks");
