@@ -1,6 +1,8 @@
 # Typst Resume
 Writing my resume in Typst (the better version of LaTeX)
 
+This repository runs CI which compiles my Typst files into PDF's and releases them whenever there is a new tag, with tags being semantically versioned.  
+
 ## How does this work? 
 I was inspired by [@jskherman](https://github.com/jskherman/cv.typ) who used `.yaml` files to store the data of his resume to be updated easily and simply. 
 
