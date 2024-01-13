@@ -16,10 +16,8 @@ jobs:
       - name: Compile PDF with Typst
         uses: lvignoli/typst-action@main
         with:
-          source_file: |
-            src/main.typ
+          source_file: src/main.typ
           options: |
-            compile
             --font-path
             src/resources/fonts
       
