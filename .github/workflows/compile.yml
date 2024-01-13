@@ -18,7 +18,7 @@ jobs:
         with:
           source_file: |
             src/main.typ
-          options:
+          options: |
             --font-path
             src/resources/fonts
       
