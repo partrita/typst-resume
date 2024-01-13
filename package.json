@@ -8,8 +8,7 @@
   "scripts": {
     "prebuild": "mkdir -p $npm_package_config_build_dir",
     "build": "typst compile --font-path $npm_package_config_font_path $npm_package_config_src_dir/$npm_package_config_src_file $npm_package_config_build_dir/$npm_package_config_output_file",
-    "watch": "yarn run prebuild && typst watch --font-path $npm_package_config_font_path $npm_package_config_src_dir/$npm_package_config_src_file $npm_package_config_build_dir/$npm_package_config_output_file",
-    "git-hooks": "node ./.gitHooks/index.js"
+    "watch": "yarn run prebuild && typst watch --font-path $npm_package_config_font_path $npm_package_config_src_dir/$npm_package_config_src_file $npm_package_config_build_dir/$npm_package_config_output_file"
   },
   "config": {
     "src_dir": "src",
