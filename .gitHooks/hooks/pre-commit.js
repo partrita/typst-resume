@@ -23,6 +23,7 @@ const handleBoolInput = (res) => {
 
 const tags = getTags();
 
+
 rl.question("Would you like to tag this commit?[y/N]: ", (res) => {
   if (handleBoolInput(res)) {
     console.log(`Latest tag: ${tags.at(-1)}`);
