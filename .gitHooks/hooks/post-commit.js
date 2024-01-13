@@ -10,15 +10,35 @@ const rl = readline.createInterface({
 
 const getTags = () => {
   const res = child_process.execSync("git tag").toString();
-  console.log(res.split("\n").filter(s => s !== ""));
+  return res.split("\n").filter(s => s !== "");
 }
 
-getTags();
+const handleBoolInput = (res) => {
+  res = res.toLowerCase();
+  if (res === "yes" || res === "y") return true;
+  return false
+}
 
-// rl.question("Would you like to tag this commit?[y/N] ", (res) => {
-  
-// })
 
-// rl.on("close", () => {
 
-// })
+const tags = getTags();
+
+rl.question("Would you like to tag this commit?[y/N]: ", (res) => {
+  if (handleBoolInput(res)) {
+    console.log(`Latest tag: ${tags.at(-1)}`);
+    let changeType;
+    while(!changeType) {
+      rl.question("Is this a minor change or a major change?: ", (res) => {
+        if (res === "major" || res == "minor") {
+          changeType = res;
+        }
+      })
+    }
+  } else {
+    rl.close()
+  }
+})
+
+rl.on("close", () => {
+  process.exit(0);
+})
