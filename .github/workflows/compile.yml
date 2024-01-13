@@ -12,14 +12,15 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-      
+      - name: Get Current Date
+        id: date
+        run: echo "DATE=$(date +%m-%d-%Y)" >> $GITHUB_ENV
+
       - name: Compile PDF with Typst
-        uses: lvignoli/typst-action@main
+        uses: ammar-ahmed22/compile-typst-action@v1
         with:
-          source_file: src/main.typ
-          options: |
-            --font-path
-            src/resources/fonts
+          source_paths: src/main.typ
+          output_paths: 'src/${{ github.ref_name }}-${{ env.DATE }}.pdf'
       
       - name: Upload PDF
         uses: actions/upload-artifact@v3
@@ -27,13 +28,11 @@ jobs:
           name: PDF
           path: "**/*.pdf"
         
-      - name: Get Current Date
-        id: date
-        run: echo "DATE=$(date +%Y-%m-%d-%H:%M)" >> $GITHUB_ENV
       
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: github.ref_type == 'tag'
-        with:
-          name: "${{ github.ref_name }} - ${{ env.DATE }}"
-          files: src/main.pdf
+      
+      # - name: Release
+      #   uses: softprops/action-gh-release@v1
+      #   if: github.ref_type == 'tag'
+      #   with:
+      #     name: "${{ github.ref_name }} - ${{ env.DATE }}"
+      #     files: src/main.pdf
