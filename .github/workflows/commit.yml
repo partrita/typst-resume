@@ -1,0 +1,26 @@
+name: Compile and Commit Image of Resume
+on:
+  push:
+    tags:
+      - "**"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Compile PDF with Typst
+        uses: ammar-ahmed22/compile-typst-action@v1
+        with:
+          source_paths: src/main.typ
+          output_paths: 'images/latest.png'
+          fonts_path: 'src/resources/fonts'
+      - name: Commit file
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: '[bot]: Updated latest image'

@@ -1,43 +1,18 @@
-# Typst Resume
-Writing my resume in Typst (the better version of LaTeX)
+# Ammar Ahmed's Resume
+[![Latest release tag](https://img.shields.io/github/v/release/ammar-ahmed22/typst-resume)](https://github.com/ammar-ahmed22/typst-resume/releases)
 
-This repository runs CI which compiles my Typst files into PDF's and releases them whenever there is a new tag, with tags being semantically versioned.  
+Welcome to the home of my resume! Here I host my data-driven, continously deployed resume made possible by [Typst](https://typst.app)! 
 
-## How does this work? 
-I was inspired by [@jskherman](https://github.com/jskherman/cv.typ) who used `.yaml` files to store the data of his resume to be updated easily and simply. 
+![Latest Resume Image](./images/latest.png)
 
-I could have simply forked his repo to make my resume in the same way but I wanted to take on the challenge of doing it myself!
+## How It Works
+This section explains the workflow and technologies behind the creation and maintenance of my resume.
 
-Typst comes built-in with file reading and parsing capabilities for `.yaml` files so I used that in conjuction with functions written myself to format the data into my resume. 
+- **Automated Updates:** On every tagged update, the source files are compiled and released with a [custom authored GitHub action](https://github.com/ammar-ahmed22/compile-typst-action).
+- **Data-Driven Resume:** Due to the power of [Typst](https://typst.app), all my resume data is housed in a `.yml` file. Typst is able to read and parse the data which I used to define custom functions to render my resume!
+- **Version Control:** All tags and releases are semantically versioned. I've also authored a custom post-commit hook which prompts me if I want to tag the commit. The git hook automatically bumps the version based on the latest tag and whether it is a major, minor, or patch change!
 
-## How to run?
-Being a Node.js guy, I included a `package.json` to make use of `yarn` (or npm) to run the compilation commands easily.
-
-### Install the following:
-- yarn (or npm)
-- typst
-
-Run `yarn build` to compile into a PDF 
-
-Run `yarn watch` to compile ino a PDF and watch for changes in the source file. 
-
-
-## Continuous Deployment
-### Compile and Release Resume
-- GitHub Action that runs whenever a new tag is released
-- Compiles the Typst code to PDF and releases it with a timestamp
-#### Steps
-1. Checks out the repository (so it's available for the action to use)
-2. Compiles the Typst code to PDF
-3. Uploads the generated PDF as an artifact
-4. Releases the generated PDF with the timestamp
-
-### `post-commit` Git Hook
-- Whenever I commit changes locally, I am prompted if I want to tag the commit
-- Pulls the latest version
-  + Prompted to bump major or minor version
-  + Creates the new tag based on the latest
-#### Here's how it looks for me:
+Here's how it looks when I make a commit:
 ```bash
 >> git add . && git commit -m "Some changes"
 [post-commit hook] Commit done!
@@ -45,6 +20,13 @@ Would you like to tag this commit? [y/N] y
 [current-version]: v1.7
 Is this a major change or a minor change? minor
 [bumping-version]: v1.8
-[main 0d0fce2] Updating README.md
+[main 0d0fce2] Some changes
  2 files changed, 30 insertions(+), 4 deletions(-)
 ```
+
+- **Testing:** Being a `NodeJS` fan, I set up a `package.json` in this repo to be able to run `yarn` commands to compile my resume locally.
+
+## Connect With Me
+I am always open to connecting with professionals from the industry and discussing potential opportunities.
+
+[![LinkedIn Profile](https://img.shields.io/badge/Ammar%20Ahmed-764BA2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ammarahmed2203) [![Personal Website](https://img.shields.io/badge/Website-764BA2?style=for-the-badge)](https://ammarahmed.ca) [![Mail](https://img.shields.io/badge/Email-764BA2?style=for-the-badge)](mailto:ammar.ahmed1@uwaterloo.ca)
