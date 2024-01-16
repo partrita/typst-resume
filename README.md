@@ -3,7 +3,7 @@
 
 Welcome to the home of my resume! Here I host my data-driven, continously deployed resume made possible by [Typst](https://typst.app)! 
 
-![Latest Resume Image](./images/latest.png)
+![Latest Resume Image](./latest.png)
 
 ## How It Works
 This section explains the workflow and technologies behind the creation and maintenance of my resume.

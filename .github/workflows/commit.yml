@@ -18,7 +18,7 @@ jobs:
         uses: ammar-ahmed22/compile-typst-action@v1
         with:
           source_paths: src/main.typ
-          output_paths: 'images/latest.png'
+          output_paths: 'latest.png'
           fonts_path: 'src/resources/fonts'
       - name: Commit file
         uses: stefanzweifel/git-auto-commit-action@v5
