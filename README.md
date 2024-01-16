@@ -1,11 +1,15 @@
-# Ammar Ahmed's Resume
-[![Latest release tag](https://img.shields.io/github/v/release/ammar-ahmed22/typst-resume)](https://github.com/ammar-ahmed22/typst-resume/releases)
+<div align="center">
+  <h2>Ammar Ahmed's Resume</h2> 
+  <a href="https://github.com/ammar-ahmed22/typst-resume/releases" >
+    <img src="https://img.shields.io/github/v/release/ammar-ahmed22/typst-resume"/>
+  </a>
+  <p>
+    Welcome to the home of my resume! Here I host my data-driven, continously deployed resume made possible by <a href="https://typst.app">Typst</a>!
+  </p>
+  <img src="./latest.png" width="400" />
+</div>
 
-Welcome to the home of my resume! Here I host my data-driven, continously deployed resume made possible by [Typst](https://typst.app)! 
-
-![Latest Resume Image](./latest.png)
-
-## How It Works
+### ✨ How It Works
 This section explains the workflow and technologies behind the creation and maintenance of my resume.
 
 - **Automated Updates:** On every tagged update, the source files are compiled and released with a [custom authored GitHub action](https://github.com/ammar-ahmed22/compile-typst-action).
@@ -26,7 +30,17 @@ Is this a major change or a minor change? minor
 
 - **Testing:** Being a `NodeJS` fan, I set up a `package.json` in this repo to be able to run `yarn` commands to compile my resume locally.
 
-## Connect With Me
+### 🔗 Connect With Me
 I am always open to connecting with professionals from the industry and discussing potential opportunities.
 
-[![LinkedIn Profile](https://img.shields.io/badge/Ammar%20Ahmed-764BA2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ammarahmed2203) [![Personal Website](https://img.shields.io/badge/Website-764BA2?style=for-the-badge)](https://ammarahmed.ca) [![Mail](https://img.shields.io/badge/Email-764BA2?style=for-the-badge)](mailto:ammar.ahmed1@uwaterloo.ca)
+<div align="center">
+  <a href="https://linkedin.com/in/ammarahmed2203">
+    <img src="https://img.shields.io/badge/Ammar%20Ahmed-764BA2?style=for-the-badge&logo=linkedin" alt="LinkedIn"/>
+  </a>
+  <a href="https://ammarahmed.ca">
+    <img src="https://img.shields.io/badge/Website-764BA2?style=for-the-badge" alt="Personal website" />
+  </a>
+  <a href="mailto:ammar.ahmed1@uwaterloo.ca">
+    <img src="https://img.shields.io/badge/Email-764BA2?style=for-the-badge" alt="Email"/>
+  </a>
+</div>
