@@ -45,7 +45,6 @@ sections:
           - "Resolved high-priority bugs, *reducing reported issues by 15%* and enhancing stability"
           - "Enhanced YAML-JSON converter by enabling insertion of arbitrary values in nested structures using DFS."
           - "Implemented dynamic UI components with React, adhering to UI/UX guidelines."
-          # - Developing features with emphasis on designing and implementing new components.
       - org:
           name: AI Arena
           link: https://docs.aiarena.io/
