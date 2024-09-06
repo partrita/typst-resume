@@ -47,7 +47,7 @@
 
 #let projectContent(content, accentColor) = {
   block()[
-    #text(weight: "semibold", fill: accentColor, if ("link" in content)  { link(content.link)[#content.name]} else { content.name }) | #text(style: "italic", content.skills.join(", ")) #h(1fr) #content.date.month #content.date.year \ 
+    #text(weight: "semibold", fill: accentColor, if ("link" in content)  { link(content.link)[#content.name #iconUnicode(symbol("\u{f0c1}"), size: 8pt, color: accentColor)]} else { content.name }) | #text(style: "italic", content.skills.join(", ")) #h(1fr) #content.date.month #content.date.year \ 
     #list(indent: 0.5em, ..content.info.map(i => eval(i, mode: "markup")))
   ]
 }

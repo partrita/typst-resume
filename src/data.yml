@@ -39,11 +39,13 @@ sections:
         skills:
           - React.js
           - JIRA
+          - Java
         info:
-          - Engaging in the development of the NSP (Network Services Platform) web application, specializing in React.js.
-          - Focusing on creating reusable front-end components to enhance user experience and application efficiency.
-          - Addressing software bugs, ensuring robust performance and reliability of the NSP application.
-          - Developing features with emphasis on designing and implementing new components.
+          - "Developed reusable component library, increasing *development efficiency by 25% through code reuse*."
+          - "Resolved high-priority bugs, *reducing reported issues by 15%* and enhancing stability"
+          - "Enhanced YAML-JSON converter by enabling insertion of arbitrary values in nested structures using DFS."
+          - "Implemented dynamic UI components with React, adhering to UI/UX guidelines."
+          # - Developing features with emphasis on designing and implementing new components.
       - org:
           name: AI Arena
           link: https://docs.aiarena.io/
@@ -164,7 +166,7 @@ sections:
           year: 2020
         end:
           month: May
-          year: 2025
+          year: 2026
         degree: BASc. in Nanotechnology Engineering (Co-op)
         location:
           country: Canada
@@ -177,6 +179,7 @@ sections:
         skills:
           - JavaScript
           - TypeScript
+          - Rust
           - Python
           - HTML/CSS
           - MATLAB
