@@ -32,6 +32,9 @@ sections:
         start:
           month: January
           year: 2024
+        end:
+          month: August
+          year: 2024
         location:
           country: Canada
           city: Ottawa
