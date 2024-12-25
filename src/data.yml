@@ -150,7 +150,6 @@ sections:
           - "Visualized the A\\*, Djikstra and Greedy Best First Search algorithms."
           - Generated procedural, pseudo-random mazes through the recursive backtracking algorithm.
           - Persisted state of application between maze generation and path-finding through the use of React hooks and context.
-          # - Implemented object-oriented programming to create classes for grid cell's, vectors and priority queues.
         date:
           month: August
           year: 2022
