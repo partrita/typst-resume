@@ -17,7 +17,7 @@ jobs:
         run: echo "DATE=$(date +%m-%d-%Y)" >> $GITHUB_ENV
 
       - name: Compile PDF with Typst
-        uses: ammar-ahmed22/compile-typst-action@v1
+        uses: ammar-ahmed22/compile-typst-action@main
         with:
           source_paths: src/main.typ
           output_paths: 'src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf'
