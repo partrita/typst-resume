@@ -14,7 +14,7 @@
     "src_dir": "src",
     "font_path": "src/resources/fonts",
     "src_file": "main.typ",
-    "output_file": "AmmarAhmedResume.pdf",
+    "output_file": "resume.pdf",
     "build_dir": "build"
   }
 

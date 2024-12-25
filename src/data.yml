@@ -150,7 +150,7 @@ sections:
           - "Visualized the A\\*, Djikstra and Greedy Best First Search algorithms."
           - Generated procedural, pseudo-random mazes through the recursive backtracking algorithm.
           - Persisted state of application between maze generation and path-finding through the use of React hooks and context.
-          - Implemented object-oriented programming to create classes for grid cell's, vectors and priority queues.
+          # - Implemented object-oriented programming to create classes for grid cell's, vectors and priority queues.
         date:
           month: August
           year: 2022
@@ -158,7 +158,19 @@ sections:
           - TypeScript
           - React.js
           - Chakra-UI
-  
+      - name: Qalam
+        link: https://qalam-playground.web.app/ 
+        info:
+          - Developed an interpreted programming langauge from scratch with Urdu insipired syntax using Rust
+          - "Acheieved *500+ monthly downloads* on crates.io, showcasing growing developer adoption."
+          - Built a playground website to run Qalam code with a Rust backend and React frontend.
+          - Authored comprehensive documentation and examples, improving user onboarding and engagement.
+        date:
+          month: September
+          year: 2024
+        skills:
+          - Rust
+          - React
   - name: Education
     type: Education
     content:
@@ -210,14 +222,14 @@ sections:
           - Matplotlib
           - SFML
           - Git
-  - name: Honors and Awards
-    type: Awards
-    content:
-      - name: Hafiz-ul-Quran
-        org: Islamic Foundation of Toronto
-        date:
-          month: December
-          year: 2017
-        info:
-          - Memorization of 850 page holy book in classical Arabic
-          - Certified by the top Islamic Institute of Toronto
+  # - name: Honors and Awards
+  #   type: Awards
+  #   content:
+  #     - name: Hafiz-ul-Quran
+  #       org: Islamic Foundation of Toronto
+  #       date:
+  #         month: December
+  #         year: 2017
+  #       info:
+  #         - Memorization of 850 page holy book in classical Arabic
+  #         - Certified by the top Islamic Institute of Toronto
