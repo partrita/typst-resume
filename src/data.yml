@@ -26,9 +26,32 @@ sections:
     type: Experience
     content:
       - org:
+          name: Mantle
+          link: https://withmantle.com
+        position: Software Engineering Intern
+        start:
+          month: January
+          year: 2025
+        end:
+          month: May
+          year: 2025
+        location:
+          country: Canada
+          city: Toronto
+          region: ON
+        skills:
+          - React.js
+          - TypeScript
+          - TailwindCSS
+          - Golang
+        info:
+          - "Implemented role-based access control (RBAC) across the *entire 100+ page* React.js frontend, improving access management and security."
+          - "Gained expertise in Mantle’s private asset management tools designed for founders, operators, and limited partners."
+          - "Collaborated with the development team to enhance platform usability and maintain industry best practices."
+      - org:
           name: Nokia
           link: https://nokia.com
-        position: Software Developer
+        position: Software Engineering Intern
         start:
           month: January
           year: 2024
@@ -75,7 +98,7 @@ sections:
       - org:
           name: HIRE Technologies
           link: https://www.linkedin.com/company/hiretechnologies/
-        position: Full-Stack Developer
+        position: Software Engineering Intern 
         start:
           month: January
           year: 2022
@@ -98,29 +121,29 @@ sections:
           - "Independently developed a comprehensive full-stack web application showcasing Microsoft Teams call data for *100+ employees* using React, GraphQL, MongoDB, and Chakra-UI."
           - Led the implementation of a sign-up code feature, overseeing front-end enhancements and authoring AWS Lambda functions.
           - Designed and implemented a streamlined front-end view for the web application using React and Material UI.
-      - org:
-          name: University of Waterloo
-          link: https://uwaterloo.ca/centre-for-work-integrated-learning/
-        position: Developer
-        start:
-          month: May
-          year: 2021
-        end:
-          month: August
-          year: 2021
-        location:
-          country: Canada
-          city: Waterloo
-          region: ON
-        skills:
-          - HTML/CSS 
-          - JavaScript 
-          - Bootstrap
-        info:
-          - Developed dynamic course catalogs using HTML/CSS, JavaScript, and Bootstrap.
-          - Collaborated with Deloitte Human Capital consultants to enhance UI/UX for educational courses at University of Waterloo.
-          - "Implemented auto-scrolling for Bootstrap accordions using JavaScript across *100+ webpages in 10+ educational courses*."
-          - Streamlined team workflow through JavaScript automation services to boost efficiency.
+      # - org:
+      #     name: University of Waterloo
+      #     link: https://uwaterloo.ca/centre-for-work-integrated-learning/
+      #   position: Developer
+      #   start:
+      #     month: May
+      #     year: 2021
+      #   end:
+      #     month: August
+      #     year: 2021
+      #   location:
+      #     country: Canada
+      #     city: Waterloo
+      #     region: ON
+      #   skills:
+      #     - HTML/CSS 
+      #     - JavaScript 
+      #     - Bootstrap
+      #   info:
+      #     - Developed dynamic course catalogs using HTML/CSS, JavaScript, and Bootstrap.
+      #     - Collaborated with Deloitte Human Capital consultants to enhance UI/UX for educational courses at University of Waterloo.
+      #     - "Implemented auto-scrolling for Bootstrap accordions using JavaScript across *100+ webpages in 10+ educational courses*."
+      #     - Streamlined team workflow through JavaScript automation services to boost efficiency.
   - name: Projects
     type: Project
     content:
