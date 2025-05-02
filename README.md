@@ -30,6 +30,8 @@ Is this a major change or a minor change? minor
 
 - **Testing:** Being a `NodeJS` fan, I set up a `package.json` in this repo to be able to run `yarn` commands to compile my resume locally.
 
+<!-- Test comment to test version bump release -->
+
 ### 🔗 Connect With Me
 I am always open to connecting with professionals from the industry and discussing potential opportunities.
 
