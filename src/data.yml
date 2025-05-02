@@ -41,13 +41,16 @@ sections:
           region: ON
         skills:
           - React.js
+          - Go
           - TypeScript
           - TailwindCSS
-          - Golang
+          - Linear
+          - GCP
         info:
-          - "Implemented role-based access control (RBAC) across the *entire 100+ page* React.js frontend, improving access management and security."
-          - "Gained expertise in Mantle’s private asset management tools designed for founders, operators, and limited partners."
-          - "Collaborated with the development team to enhance platform usability and maintain industry best practices."
+          - "Built a React-based email system to replace SendGrid’s UI, reducing *email development time by 50%*"
+          - "Implemented RBAC *across 50+ routes and components*, with *over 200 tests* ensuring secure access control."
+          - "Delivered in-platform equity exercise flows with multi-step forms, file uploads, and real-time event timelines."
+          - "Prototyped a *GenAI-powered “smart drafting”* feature that extracts fields from uploaded option agreements, *fast-tracked by the PM* after strong internal reception."
       - org:
           name: Nokia
           link: https://nokia.com
@@ -91,7 +94,7 @@ sections:
           - Tween.js 
           - HTML/CSS
         info:
-          - Crafted engaging UI components and visual effects for a web-based platform fighter game, enhancing user experience and engagement.
+          - Crafted engaging UI components for a web-based platform fighter game, enhancing user experience and engagement.
           - "Engineered a custom React Hook for image lazy-loading, achieving a *75% reduction in loading times*, optimizing game performance."
           - Innovated a state machine system to dynamically render cut scenes using JSON data with THREE.js and custom React hooks.
           - Collaborated on game end animations adhering meticulously to UI design specifications, employing CSS keyframes, tween.js, and THREE.js.
@@ -216,6 +219,7 @@ sections:
           - JavaScript
           - TypeScript
           - Rust
+          - Go
           - Python
           - HTML/CSS
           - MATLAB
