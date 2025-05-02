@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,7 +24,7 @@ jobs:
           output_paths: 'src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf'
           fonts_path: 'src/resources/fonts'
       - name: Upload PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: PDF
           path: "src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf"
