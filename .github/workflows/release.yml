@@ -64,7 +64,7 @@ jobs:
         id: release_datetime # 스텝 ID
         run: |
           # 릴리스 태그에 사용할 시간 포맷 (예: 2025.07.14-1114)
-          TAG_DATE_TIME=$(date +'%Y-%m-%d:%H%M')
+          TAG_DATE_TIME=$(date +'%Y.%m.%d-%H%M')
           echo "tag_datetime=$TAG_DATE_TIME" >> "$GITHUB_OUTPUT"
 
       - name: GitHub 릴리스 생성
