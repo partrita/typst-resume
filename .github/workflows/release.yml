@@ -1,37 +1,82 @@
-name: Compile and Release Resume
+name: 컴파일 및 이력서 릴리스 # 워크플로우 이름 명확화
+
 on:
   push:
-    tags:
-       - "**"
-  workflow_dispatch:
+    branches: [main] # main 브랜치 푸시 시 자동 실행
+  workflow_dispatch: # 수동 실행 허용
+
 permissions:
-  contents: write
+  contents: write # 릴리스 생성을 위해 쓰기 권한 부여
 
 jobs:
-  build:
+  build_pdf: # Job 이름 명확화
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
-      - name: Get Current Date
-        id: date
-        run: echo "DATE=$(date +%m-%d-%Y)" >> $GITHUB_ENV
+    outputs: # build_pdf Job의 출력 정의 (다른 Job에서 접근 가능)
+      compiled_pdf_filename: ${{ steps.set_pdf_name.outputs.pdf_name }}
 
-      - name: Compile PDF with Typst
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: PDF 파일명 설정
+        id: set_pdf_name # 스텝 ID
+        run: |
+          # 현재 날짜 포맷 (예: 07-14-2025)
+          CURRENT_DATE=$(date +%m-%d-%Y)
+          # 최종 PDF 파일명 (예: resume_main-07-14-2025.pdf)
+          PDF_NAME="resume_${{ github.ref_name }}-${CURRENT_DATE}.pdf"
+          # 이 파일명을 다음 스텝과 다른 Job에서 사용할 수 있도록 출력 변수로 설정
+          echo "pdf_name=$PDF_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Typst로 PDF 컴파일
         uses: ammar-ahmed22/compile-typst-action@main
         with:
           source_paths: src/main.typ
-          output_paths: 'src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf'
+          # 설정된 PDF 파일명 사용
+          output_paths: 'src/${{ steps.set_pdf_name.outputs.pdf_name }}'
           fonts_path: 'src/resources/fonts'
-      - name: Upload PDF
+
+      - name: 컴파일된 PDF 아티팩트 업로드
         uses: actions/upload-artifact@v4
         with:
-          name: PDF
-          path: "src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf"
-      
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: github.ref_type == 'tag'
+          name: compiled-resume # 아티팩트 이름 명확화
+          path: 'src/${{ steps.set_pdf_name.outputs.pdf_name }}' # 실제 파일 경로
+
+  create_release: # Job 이름 명확화
+    needs: build_pdf # build_pdf Job이 성공해야 실행
+    runs-on: ubuntu-latest
+    # main 브랜치에 푸시될 때만 릴리스 생성
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+
+    steps:
+      - name: 아티팩트 다운로드 디렉토리 생성
+        run: mkdir -p ./downloaded_pdf # 아티팩트를 다운로드할 디렉토리 생성
+
+      - name: 컴파일된 PDF 아티팩트 다운로드
+        uses: actions/download-artifact@v4
         with:
-          name: "${{ github.ref_name }} - ${{ env.DATE }}"
-          files: "src/resume_${{ github.ref_name }}-${{ env.DATE }}.pdf"
+          name: compiled-resume # 업로드 시 사용한 아티팩트 이름과 동일
+          path: ./downloaded_pdf/ # 지정된 디렉토리로 다운로드
+
+      - name: 릴리스 태그 날짜 및 시간 설정
+        id: release_datetime # 스텝 ID
+        run: |
+          # 릴리스 태그에 사용할 시간 포맷 (예: 2025.07.14-1114)
+          TAG_DATE_TIME=$(date +'%Y.%m.%d-%H%M')
+          echo "tag_datetime=$TAG_DATE_TIME" >> "$GITHUB_OUTPUT"
+
+      - name: GitHub 릴리스 생성
+        uses: softprops/action-gh-release@v1
+        with:
+          # 태그 이름: 브랜치명-v빌드넘버-릴리스날짜시간 (예: main-v123-2025.07.14-1114)
+          tag_name: ${{ github.ref_name }}-v${{ github.run_number }}-${{ steps.release_datetime.outputs.tag_datetime }}
+          # 릴리스 이름
+          name: 릴리스 ${{ github.ref_name }} v${{ github.run_number }} (${{ steps.release_datetime.outputs.tag_datetime }})
+          # 릴리스 본문
+          body: 커밋 ${{ github.sha }}에 대한 PDF 이력서 자동 릴리스.
+          # 릴리스에 첨부할 파일 경로 (다운로드된 아티팩트 경로 + 파일명)
+          files: ./downloaded_pdf/${{ needs.build_pdf.outputs.compiled_pdf_filename }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub 토큰 사용
