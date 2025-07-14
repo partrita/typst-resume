@@ -1,22 +1,24 @@
-<div align="center">
-  <h2>Ammar Ahmed's Resume</h2> 
-  <a href="https://github.com/ammar-ahmed22/typst-resume/releases" >
-    <img src="https://img.shields.io/github/v/release/ammar-ahmed22/typst-resume"/>
-  </a>
-  <p>
-    Welcome to the home of my resume! Here I host my data-driven, continously deployed resume made possible by <a href="https://typst.app">Typst</a>!
-  </p>
-  <img src="./latest.png" width="400" />
-</div>
+# Typst 이력서
 
-### ✨ How It Works
-This section explains the workflow and technologies behind the creation and maintenance of my resume.
+<a href="[https://github.com/partrita/typst-resume/releases](https://github.com/partrita/typst-resume/releases)">
+<img src="[https://img.shields.io/github/v/release/partrita/typst-resume](https://img.shields.io/github/v/release/partrita/typst-resume)"/>
+</a>
 
-- **Automated Updates:** On every tagged update, the source files are compiled and released with a [custom authored GitHub action](https://github.com/ammar-ahmed22/compile-typst-action).
-- **Data-Driven Resume:** Due to the power of [Typst](https://typst.app), all my resume data is housed in a `.yml` file. Typst is able to read and parse the data which I used to define custom functions to render my resume!
-- **Version Control:** All tags and releases are semantically versioned. I've also authored a custom post-commit hook which prompts me if I want to tag the commit. The git hook automatically bumps the version based on the latest tag and whether it is a major, minor, or patch change!
 
-Here's how it looks when I make a commit:
+이곳에서 [Typst](https://typst.app)를 통해 데이터 기반의 지속적으로 배포되는 이력서를 호스팅하고  있습니다!
+
+![](./latest.png)</p>
+
+# ✨ 작동 방식
+
+이 섹션에서는 제 이력서 생성 및 유지 관리의 워크플로우와 기술을 설명합니다.
+
+  - **자동 업데이트:** 태그된 업데이트가 있을 때마다 소스 파일이 컴파일되어 [사용자 지정 작성 GitHub 액션](https://github.com/ammar-ahmed22/compile-typst-action)과 함께 릴리스됩니다.
+  - **데이터 기반 이력서:** [Typst](https://typst.app)의 기능 덕분에 모든 이력서 데이터는 `.yml` 파일에 저장됩니다. Typst는 이 데이터를 읽고 파싱하여 이력서를 렌더링하는 데 사용된 사용자 지정 함수를 정의할 수 있습니다!
+  - **버전 관리:** 모든 태그와 릴리스는 의미론적으로 버전이 관리됩니다. 또한 사용자 지정 post-commit 훅을 작성하여 커밋에 태그를 지정할 것인지 묻도록 설정했습니다. 이 git 훅은 최신 태그와 이것이 주요 변경사항인지, 사소한 변경사항인지, 또는 패치 변경사항인지에 따라 자동으로 버전을 업데이트합니다!
+
+다음은 제가 커밋을 할 때의 모습입니다:
+
 ```bash
 >> git add . && git commit -m "Some changes"
 [post-commit hook] Commit done!
@@ -28,21 +30,7 @@ Is this a major change or a minor change? minor
  2 files changed, 30 insertions(+), 4 deletions(-)
 ```
 
-- **Testing:** Being a `NodeJS` fan, I set up a `package.json` in this repo to be able to run `yarn` commands to compile my resume locally.
+  - **테스트:** `NodeJS` 팬으로서, 이 레포에 `package.json`을 설정하여 `yarn` 명령을 실행하여 이력서를 로컬에서 컴파일할 수 있도록 했습니다.
 
-<!-- Test comment to test version bump release -->
 
-### 🔗 Connect With Me
-I am always open to connecting with professionals from the industry and discussing potential opportunities.
-
-<div align="center">
-  <a href="https://linkedin.com/in/ammarahmed2203">
-    <img src="https://img.shields.io/badge/Ammar%20Ahmed-764BA2?style=for-the-badge&logo=linkedin" alt="LinkedIn"/>
-  </a>
-  <a href="https://ammarahmed.ca">
-    <img src="https://img.shields.io/badge/Website-764BA2?style=for-the-badge" alt="Personal website" />
-  </a>
-  <a href="mailto:ammar.ahmed1@uwaterloo.ca">
-    <img src="https://img.shields.io/badge/Email-764BA2?style=for-the-badge" alt="Email"/>
-  </a>
-</div>
+# 🔗 저와 연결하기

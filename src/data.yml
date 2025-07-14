@@ -1,4 +1,4 @@
-name: Ammar Ahmed
+name: 아마르 아흐메드
 
 contact:
   - text: 416-836-4386
@@ -16,28 +16,28 @@ contact:
     icon:
       unicode: "\uf09b"
     link: https://github.com/ammar-ahmed22
-  - text: Ammar Ahmed
+  - text: 아마르 아흐메드
     icon:
       unicode: "\uf08c"
     link: www.linkedin.com/in/ammarahmed2203
 
 sections:
-  - name: Work Experience
+  - name: 경력
     type: Experience
     content:
       - org:
           name: Mantle
           link: https://withmantle.com
-        position: Software Engineering Intern
+        position: 소프트웨어 엔지니어링 인턴
         start:
-          month: January
+          month: 1월
           year: 2025
         end:
-          month: May
+          month: 5월
           year: 2025
         location:
-          country: Canada
-          city: Toronto
+          country: 캐나다
+          city: 토론토
           region: ON
         skills:
           - React.js
@@ -47,46 +47,46 @@ sections:
           - Linear
           - GCP
         info:
-          - "Built a React-based email system to replace SendGrid’s UI, reducing *email development time by 50%*"
-          - "Implemented RBAC *across 50+ routes and components*, with *over 200 tests* ensuring secure access control."
-          - "Delivered in-platform equity exercise flows with multi-step forms, file uploads, and real-time event timelines."
-          - "Prototyped a *GenAI-powered “smart drafting”* feature that extracts fields from uploaded option agreements, *fast-tracked by the PM* after strong internal reception."
+          - "SendGrid의 UI를 대체하는 React 기반 이메일 시스템을 구축하여 *이메일 개발 시간을 50% 단축*"
+          - "50개 이상의 경로 및 구성 요소에 걸쳐 RBAC를 구현하고 *200개 이상의 테스트*를 통해 안전한 액세스 제어를 보장했습니다."
+          - "다단계 양식, 파일 업로드 및 실시간 이벤트 타임라인을 통해 플랫폼 내 자산 행사 흐름을 제공했습니다."
+          - "업로드된 옵션 계약에서 필드를 추출하는 *GenAI 기반 '스마트 드래프팅'* 기능을 프로토타이핑했으며, 강력한 내부 반응 후 *PM에 의해 신속하게 처리*되었습니다."
       - org:
           name: Nokia
           link: https://nokia.com
-        position: Software Engineering Intern
+        position: 소프트웨어 엔지니어링 인턴
         start:
-          month: January
+          month: 1월
           year: 2024
         end:
-          month: August
+          month: 8월
           year: 2024
         location:
-          country: Canada
-          city: Ottawa
+          country: 캐나다
+          city: 오타와
           region: ON
         skills:
           - React.js
           - JIRA
           - Java
         info:
-          - "Developed reusable component library, increasing *development efficiency by 25% through code reuse*."
-          - "Resolved high-priority bugs, *reducing reported issues by 15%* and enhancing stability"
-          - "Enhanced YAML-JSON converter by enabling insertion of arbitrary values in nested structures using DFS."
-          - "Implemented dynamic UI components with React, adhering to UI/UX guidelines."
+          - "재사용 가능한 구성 요소 라이브러리를 개발하여 *코드 재사용을 통해 개발 효율성을 25% 향상*시켰습니다."
+          - "우선 순위가 높은 버그를 해결하여 *보고된 문제를 15% 줄이고* 안정성을 향상시켰습니다."
+          - "DFS를 사용하여 중첩된 구조에 임의의 값을 삽입할 수 있도록 하여 YAML-JSON 변환기를 개선했습니다."
+          - "UI/UX 지침을 준수하여 React로 동적 UI 구성 요소를 구현했습니다."
       - org:
           name: AI Arena
           link: https://docs.aiarena.io/
-        position: Frontend Developer
+        position: 프론트엔드 개발자
         start:
-          month: September
+          month: 9월
           year: 2022
         end:
-          month: May
+          month: 5월
           year: 2023
         location:
-          country: Canada
-          city: Toronto
+          country: 캐나다
+          city: 토론토
           region: ON
         skills:
           - React.js 
@@ -94,23 +94,23 @@ sections:
           - Tween.js 
           - HTML/CSS
         info:
-          - Crafted engaging UI components for a web-based platform fighter game, enhancing user experience and engagement.
-          - "Engineered a custom React Hook for image lazy-loading, achieving a *75% reduction in loading times*, optimizing game performance."
+          - 웹 기반 플랫폼 격투 게임을 위한 매력적인 UI 구성 요소를 제작하여 사용자 경험과 참여도를 향상시켰습니다.
+          - "이미지 지연 로딩을 위한 사용자 지정 React Hook을 설계하여 *로딩 시간을 75% 단축*하고 게임 성능을 최적화했습니다."
           - Innovated a state machine system to dynamically render cut scenes using JSON data with THREE.js and custom React hooks.
-          - Collaborated on game end animations adhering meticulously to UI design specifications, employing CSS keyframes, tween.js, and THREE.js.
+          - CSS 키프레임, tween.js 및 THREE.js를 사용하여 UI 디자인 사양을 꼼꼼하게 준수하는 게임 종료 애니메이션에 대해 협력했습니다.
       - org:
           name: HIRE Technologies
           link: https://www.linkedin.com/company/hiretechnologies/
-        position: Software Engineering Intern 
+        position: 소프트웨어 엔지니어링 인턴 
         start:
-          month: January
+          month: 1월
           year: 2022
         end:
-          month: May
+          month: 5월
           year: 2022
         location:
-          country: Canada
-          city: Toronto
+          country: 캐나다
+          city: 토론토
           region: ON
         skills:
           - React
@@ -120,64 +120,22 @@ sections:
           - AWS Lambda
           - DynamoDB
         info:
-          - Managed bug fixes, testing, and minor updates for the Pulsify web application while contributing to feature development.
-          - "Independently developed a comprehensive full-stack web application showcasing Microsoft Teams call data for *100+ employees* using React, GraphQL, MongoDB, and Chakra-UI."
-          - Led the implementation of a sign-up code feature, overseeing front-end enhancements and authoring AWS Lambda functions.
-          - Designed and implemented a streamlined front-end view for the web application using React and Material UI.
-      # - org:
-      #     name: University of Waterloo
-      #     link: https://uwaterloo.ca/centre-for-work-integrated-learning/
-      #   position: Developer
-      #   start:
-      #     month: May
-      #     year: 2021
-      #   end:
-      #     month: August
-      #     year: 2021
-      #   location:
-      #     country: Canada
-      #     city: Waterloo
-      #     region: ON
-      #   skills:
-      #     - HTML/CSS 
-      #     - JavaScript 
-      #     - Bootstrap
-      #   info:
-      #     - Developed dynamic course catalogs using HTML/CSS, JavaScript, and Bootstrap.
-      #     - Collaborated with Deloitte Human Capital consultants to enhance UI/UX for educational courses at University of Waterloo.
-      #     - "Implemented auto-scrolling for Bootstrap accordions using JavaScript across *100+ webpages in 10+ educational courses*."
-      #     - Streamlined team workflow through JavaScript automation services to boost efficiency.
-  - name: Projects
+          - Pulsify 웹 애플리케이션의 버그 수정, 테스트 및 사소한 업데이트를 관리하면서 기능 개발에 기여했습니다.
+          - "React, GraphQL, MongoDB 및 Chakra-UI를 사용하여 *100명 이상의 직원*을 위한 Microsoft Teams 통화 데이터를 보여주는 포괄적인 풀스택 웹 애플리케이션을 독립적으로 개발했습니다."
+          - 가입 코드 기능 구현을 주도하고 프런트엔드 개선 사항을 감독하고 AWS Lambda 함수를 작성했습니다.
+          - React 및 Material UI를 사용하여 웹 애플리케이션을 위한 간소화된 프런트엔드 뷰를 설계하고 구현했습니다.
+  - name: 프로젝트
     type: Project
     content:
-      # - name: ammarahmed.ca
-      #   link: https://ammarahmed.ca
-      #   info:
-      #    - Full-stack portfolio website implementing Notion as the CMS
-      #    - Implemented Notion SDK to use Notion as a read-only database for projects, blog posts, skills and experience.
-      #    - Created GraphQL API to access parsed Notion data for rendering.
-      #    - Front-end implemented using the React framework in conjunction with ChakraUI.
-      #   date:
-      #     month: September
-      #     year: 2021
-      #   skills:
-      #     - TypeScript
-      #     - Apollo
-      #     - Node.js
-      #     - React.js
-      #     - GraphQL
-      #     - Chakra-UI
-      #     - Notion
-      #     - TypeGraphQL
       - name: Pathfinder
         link: https://pathfinder.ammarahmed.ca
         info:
-          - "Designed a path-finding algorithm visualizer web application using React.js, TypeScript and ChakraUI."
-          - "Visualized the A\\*, Djikstra and Greedy Best First Search algorithms."
-          - Generated procedural, pseudo-random mazes through the recursive backtracking algorithm.
-          - Persisted state of application between maze generation and path-finding through the use of React hooks and context.
+          - "React.js, TypeScript 및 ChakraUI를 사용하여 경로 찾기 알고리즘 시각화 웹 애플리케이션을 설계했습니다."
+          - "A\*, Djikstra 및 Greedy Best First Search 알고리즘을 시각화했습니다."
+          - 재귀적 백트래킹 알고리즘을 통해 절차적, 의사 난수 미로를 생성했습니다.
+          - React Hook 및 컨텍스트를 사용하여 미로 생성과 경로 찾기 간의 애플리케이션 상태를 유지했습니다.
         date:
-          month: August
+          month: 8월
           year: 2022
         skills:
           - TypeScript
@@ -186,35 +144,35 @@ sections:
       - name: Qalam
         link: https://qalam-playground.web.app/ 
         info:
-          - Developed an interpreted programming langauge from scratch with Urdu insipired syntax using Rust
-          - "Acheieved *500+ monthly downloads* on crates.io, showcasing growing developer adoption."
-          - Built a playground website to run Qalam code with a Rust backend and React frontend.
-          - Authored comprehensive documentation and examples, improving user onboarding and engagement.
+          - Rust를 사용하여 우르두어에서 영감을 받은 구문으로 처음부터 해석된 프로그래밍 언어를 개발했습니다.
+          - "crates.io에서 *월 500회 이상의 다운로드*를 달성하여 개발자 채택이 증가하고 있음을 보여주었습니다."
+          - Rust 백엔드와 React 프런트엔드로 Qalam 코드를 실행하는 플레이그라운드 웹사이트를 구축했습니다.
+          - 포괄적인 문서와 예제를 작성하여 사용자 온보딩 및 참여를 개선했습니다.
         date:
-          month: September
+          month: 9월
           year: 2024
         skills:
           - Rust
           - React
-  - name: Education
+  - name: 학력
     type: Education
     content:
-      - institution: University of Waterloo
+      - institution: 워털루 대학교
         start:
-          month: September
+          month: 9월
           year: 2020
         end:
-          month: May
+          month: 5월
           year: 2026
-        degree: BASc. in Nanotechnology Engineering (Co-op)
+        degree: 나노기술 공학 응용 과학 학사 (코업)
         location:
-          country: Canada
-          city: Waterloo
+          country: 캐나다
+          city: 워털루
           region: ON
-  - name: Technical Skills
+  - name: 기술 스택
     type: Skills
     content:
-      - name: Languages
+      - name: 언어
         skills:
           - JavaScript
           - TypeScript
@@ -225,7 +183,7 @@ sections:
           - MATLAB
           - C++
           - LaTeX
-      - name: Developer Tools
+      - name: 개발 도구
         skills:
           - VS Code
           - GitHub
@@ -235,7 +193,7 @@ sections:
           - MongoDB Atlas
           - AWS
           - Fly.io
-      - name: Technologies/Frameworks
+      - name: 기술/프레임워크
         skills:
           - React
           - MongoDB
@@ -248,14 +206,3 @@ sections:
           - Matplotlib
           - SFML
           - Git
-  # - name: Honors and Awards
-  #   type: Awards
-  #   content:
-  #     - name: Hafiz-ul-Quran
-  #       org: Islamic Foundation of Toronto
-  #       date:
-  #         month: December
-  #         year: 2017
-  #       info:
-  #         - Memorization of 850 page holy book in classical Arabic
-  #         - Certified by the top Islamic Institute of Toronto

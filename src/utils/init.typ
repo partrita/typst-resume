@@ -1,7 +1,7 @@
 
 #let init(
-  headingFont: "Linux Libertine",
-  bodyFont: "Linux Libertine",
+  headingFont: "KoPubWorldDotum",
+  bodyFont: "KoPubWorldDotum",
   fontSize: 11pt,
   lineSpacing: 6pt,
   accentColor: black,
@@ -9,8 +9,8 @@
 ) = {
 
   set page(
-    paper: "us-letter",
-    margin: 1.25cm
+    paper: "a4",
+    margin: 1.2cm
   )
 
   set text(

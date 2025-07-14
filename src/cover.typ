@@ -8,7 +8,7 @@
   block(width: 100%)[
      #text()[
       *Behaviour Interactive Inc.* 
-    ] #h(1fr) #text()[January 19th, 2024] \
+    ] #h(1fr) #text()[2024년 1월 19일] \
     #text()[
       6666 Saint-Urbain \
       5e etage \
@@ -16,19 +16,19 @@
       Montreal, QC, Canada 
     ] \
     \
-    Dear Hiring Manager, \
+    채용 담당자님께, \
     \
-    I'm writing to express my interest in the Behaviour Interactive Programming internship. I am excited about the chance to contribute to your game projects and backend services due to my strong background in software development and fundamentals in Engineering from the University of Waterloo.\
+    Behaviour Interactive 프로그래밍 인턴십에 대한 저의 관심을 표현하고자 이 글을 씁니다. 워털루 대학교에서 쌓은 공학 기초와 탄탄한 소프트웨어 개발 배경을 바탕으로 귀사의 게임 프로젝트와 백엔드 서비스에 기여할 수 있는 기회에 대해 기대가 큽니다.\
     \
-    As a software developer at Nokia, I am working on important Network Services Platform components and improving user experience with using React.js for front-end development. I created interesting user interface (UI) elements for a fighter game on a web platform while working at AI Arena. This greatly enhanced user engagement and game performance. My comprehension of software development has been strengthened by these experiences, especially in front-end and full-stack development, which I think will be helpful in the game development industry. \ 
+    Nokia의 소프트웨어 개발자로서 저는 중요한 네트워크 서비스 플랫폼 구성 요소에 대한 작업을 수행하고 React.js를 사용하여 프런트엔드 개발 사용자 경험을 개선하고 있습니다. AI Arena에서 근무하는 동안 웹 플랫폼에서 격투 게임을 위한 흥미로운 사용자 인터페이스(UI) 요소를 만들었습니다. 이를 통해 사용자 참여와 게임 성능이 크게 향상되었습니다. 이러한 경험을 통해 소프트웨어 개발, 특히 프런트엔드 및 풀스택 개발에 대한 이해가 깊어졌으며, 이는 게임 개발 산업에 도움이 될 것이라고 생각합니다. \ 
     \
-    I am proficient in several programming languages, including Python, NodeJS, and C++. Working on game features and backend services that improve user engagement and application efficiency excites me in particular.\
+    저는 Python, NodeJS, C++를 포함한 여러 프로그래밍 언어에 능숙합니다. 특히 사용자 참여와 애플리케이션 효율성을 개선하는 게임 기능 및 백엔드 서비스 작업에 큰 흥미를 느낍니다.\
     \
-    I am especially interested in the chance to learn from and advance within the gaming industry under the guidance of senior members of Behaviour Interactive. The prospect of working for a company that is renowned for its creative game development methods and commitment to producing captivating gaming experiences excites me. \
+    저는 Behaviour Interactive의 선임 개발자들의 지도 아래 게임 산업 내에서 배우고 발전할 수 있는 기회에 특히 관심이 많습니다. 창의적인 게임 개발 방식과 매력적인 게임 경험을 제공하려는 노력으로 유명한 회사에서 일할 수 있다는 전망에 가슴이 뜁니다. \ 
     \
-    Enclosed is my resume for your consideration. I look forward to the opportunity to discuss how my background, skills, and enthusiasm for game development make me a strong fit for this position. Thank you for considering my application. I am eager to contribute to the continued success of Behaviour Interactive. \
+    검토를 위해 이력서를 동봉합니다. 저의 배경, 기술 및 게임 개발에 대한 열정이 이 직책에 얼마나 적합한지 논의할 기회를 기대합니다. 제 지원서를 검토해 주셔서 감사합니다. Behaviour Interactive의 지속적인 성공에 기여하고 싶습니다. \ 
     \
-    Sincerely, \
+    진심으로, \
     \ 
     Ammar Ahmed
   ] 

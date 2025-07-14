@@ -3,6 +3,5 @@
 #let data = yaml("./data.yml")
 #resume(
   data, 
-  accentColor: rgb("#764BA2")
-  // accentColor: rgb("#9554C8")
+  accentColor: rgb("#3e5c76")
 )
