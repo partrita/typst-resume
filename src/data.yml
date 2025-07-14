@@ -131,7 +131,7 @@ sections:
         link: https://pathfinder.ammarahmed.ca
         info:
           - "React.js, TypeScript 및 ChakraUI를 사용하여 경로 찾기 알고리즘 시각화 웹 애플리케이션을 설계했습니다."
-          - "A\*, Djikstra 및 Greedy Best First Search 알고리즘을 시각화했습니다."
+          - "Djikstra 및 Greedy Best First Search 알고리즘을 시각화했습니다."
           - 재귀적 백트래킹 알고리즘을 통해 절차적, 의사 난수 미로를 생성했습니다.
           - React Hook 및 컨텍스트를 사용하여 미로 생성과 경로 찾기 간의 애플리케이션 상태를 유지했습니다.
         date:
