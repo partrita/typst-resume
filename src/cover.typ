@@ -4,7 +4,7 @@
 
 #coverLetter(
   data, 
-  accentColor: rgb("#764BA2"),
+  accentColor: rgb("#3e5c76"),
   block(width: 100%)[
      #text()[
       *Behaviour Interactive Inc.* 

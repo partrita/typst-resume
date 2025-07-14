@@ -4,7 +4,7 @@
 
 #let coverLetter(data, accentColor: black, rest) = {
   show: doc => init(doc, accentColor: accentColor, fontSize: 12pt, lineSpacing: 10pt)
-  heading(level: 1, [Ammar Ahmed])
+  heading(level: 1, [Taeyoon Kim])
   block()[
     #contactInfo(data, accentColor)
     #rest
