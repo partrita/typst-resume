@@ -3,7 +3,7 @@
   headingFont: "KoPubWorldDotum",
   bodyFont: "KoPubWorldDotum",
   fontSize: 11pt,
-  lineSpacing: 6pt,
+  lineSpacing: 10pt,
   accentColor: black,
   doc,
 ) = {

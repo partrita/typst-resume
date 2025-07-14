@@ -1,25 +1,25 @@
-name: 아마르 아흐메드
+name: 김태윤
 
 contact:
   - text: 416-836-4386
     icon:
       unicode: "\uf095"
-  - text: ammar.ahmed1@uwaterloo.ca
+  - text: deepthought@postech.ac.kr
     icon: 
       unicode: "\uf0e0"
-    link: "mailto:ammar.ahmed1@uwaterloo.ca"
-  - text: ammarahmed.ca
+    link: "mailto:deepthought@postech.ac.kr"
+  - text: tomorrow-lab.github.io
     icon:
       unicode: "\uf0c1"
-    link: https://ammarahmed.ca
-  - text: ammar-ahmed22
+    link: https://tomorrow-lab.github.io
+  - text: partrita
     icon:
       unicode: "\uf09b"
-    link: https://github.com/ammar-ahmed22
-  - text: 아마르 아흐메드
+    link: https://github.com/partrita
+  - text: partrita
     icon:
       unicode: "\uf08c"
-    link: www.linkedin.com/in/ammarahmed2203
+    link: www.linkedin.com/in/partrita
 
 sections:
   - name: 경력

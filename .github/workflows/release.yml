@@ -12,7 +12,8 @@ jobs:
   build_pdf: # Job 이름 명확화
     runs-on: ubuntu-latest
     outputs: # build_pdf Job의 출력 정의 (다른 Job에서 접근 가능)
-      compiled_pdf_filename: ${{ steps.set_pdf_name.outputs.pdf_name }}
+      main_pdf_filename: ${{ steps.set_pdf_name.outputs.main_pdf_name }}
+      cover_pdf_filename: ${{ steps.set_pdf_name.outputs.cover_pdf_name }}
 
     steps:
       - name: 저장소 체크아웃
@@ -23,24 +24,27 @@ jobs:
         run: |
           # 현재 날짜 포맷 (예: 2025-07-14)
           CURRENT_DATE=$(date +%Y-%m-%d)
-          # 최종 PDF 파일명 (예: 2025-07-14_resume.pdf)
-          PDF_NAME="${CURRENT_DATE}_resume.pdf"
-          # 이 파일명을 다음 스텝과 다른 Job에서 사용할 수 있도록 출력 변수로 설정
-          echo "pdf_name=$PDF_NAME" >> "$GITHUB_OUTPUT"
+          # main.typ의 최종 PDF 파일명 (예: 2025-07-14_resume_main.pdf)
+          MAIN_PDF_NAME="${CURRENT_DATE}_resume_main.pdf"
+          # cover.typ의 최종 PDF 파일명 (예: 2025-07-14_resume_cover.pdf)
+          COVER_PDF_NAME="${CURRENT_DATE}_resume_cover.pdf"
+          # 이 파일명들을 다음 스텝과 다른 Job에서 사용할 수 있도록 출력 변수로 설정
+          echo "main_pdf_name=$MAIN_PDF_NAME" >> "$GITHUB_OUTPUT"
+          echo "cover_pdf_name=$COVER_NAME" >> "$GITHUB_OUTPUT" # 오타 수정: COVER_NAME -> COVER_PDF_NAME
 
       - name: Typst로 PDF 컴파일
         uses: ammar-ahmed22/compile-typst-action@main
         with:
-          source_paths: src/main.typ
-          # 설정된 PDF 파일명 사용
-          output_paths: 'src/${{ steps.set_pdf_name.outputs.pdf_name }}'
+          source_paths: src/main.typ, src/cover.typ # 두 파일을 모두 지정
+          # 설정된 두 PDF 파일명 사용
+          output_paths: 'src/${{ steps.set_pdf_name.outputs.main_pdf_name }}, src/${{ steps.set_pdf_name.outputs.cover_pdf_name }}'
           fonts_path: 'src/resources/fonts'
 
       - name: 컴파일된 PDF 아티팩트 업로드
         uses: actions/upload-artifact@v4
         with:
-          name: compiled-resume # 아티팩트 이름 명확화
-          path: 'src/${{ steps.set_pdf_name.outputs.pdf_name }}' # 실제 파일 경로
+          name: compiled-pdfs # 아티팩트 이름 명확화 (복수 파일)
+          path: src/*.pdf # src 디렉토리 내의 모든 PDF 파일 업로드
 
   create_release: # Job 이름 명확화
     needs: build_pdf # build_pdf Job이 성공해야 실행
@@ -57,7 +61,7 @@ jobs:
       - name: 컴파일된 PDF 아티팩트 다운로드
         uses: actions/download-artifact@v4
         with:
-          name: compiled-resume # 업로드 시 사용한 아티팩트 이름과 동일
+          name: compiled-pdfs # 업로드 시 사용한 아티팩트 이름과 동일
           path: ./downloaded_pdf/ # 지정된 디렉토리로 다운로드
 
       - name: 릴리스 태그 날짜 및 시간 설정
@@ -77,6 +81,8 @@ jobs:
           # 릴리스 본문
           body: 커밋 ${{ github.sha }}에 대한 PDF 이력서 자동 릴리스.
           # 릴리스에 첨부할 파일 경로 (다운로드된 아티팩트 경로 + 파일명)
-          files: ./downloaded_pdf/${{ needs.build_pdf.outputs.compiled_pdf_filename }}
+          files: |
+            ./downloaded_pdf/${{ needs.build_pdf.outputs.main_pdf_filename }}
+            ./downloaded_pdf/${{ needs.build_pdf.outputs.cover_pdf_filename }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub 토큰 사용
